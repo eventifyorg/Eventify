@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #ffa800;
+  --secondary-color: #009aff;
+  --bg-color: #fff;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+label {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.signupPage img {
+  width: 300px;
+}
+.signupPage,
+.signinPage {
+  display: flex;
+}
+
+.signupPage section,
+.signinPage section {
+  flex: 1;
+}
+
+.signup-right {
+  background: linear-gradient(rgba(0, 154, 255, 0.7), rgba(0, 154, 255, 0.7)),
+    url("./assets/forms/signup_bg.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form,
+.signin-form {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signupPage input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 154, 255, 0.5);
+  outline: none;
+}
+.names {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.names div {
+  width: 100%;
+  padding: 0 1rem;
+}
+.form-middle {
+  display: flex;
+  flex-direction: column;
+}
+.passwords {
+  display: flex;
+  justify-content: space-between;
+}
+
+.passwords div {
+  width: 100%;
+  padding: 0 1rem;
+}
+.form-sign {
+  height: 70%;
+}
+
+.form-sign div {
+  margin-bottom: 2rem;
+}
+
+.lead-text {
+  margin-bottom: 2rem;
+}
+.submit-btn button,
+.signin-btn button {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 100%;
+  color: var(--bg-color);
+  background: var(--primary-color);
+  box-shadow: 0 0 5px #333;
+}
+
+.form-sign a,
+.signin-form a {
+  color: var(--secondary-color);
+}
+
+/* Sign in Page Styling */
+.signinPage input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 154, 255, 0.5);
+  outline: none;
+}
+.signin-form div {
+  margin-bottom: 2rem;
+  width: 60%;
+}
+.signin-form {
+  width: 70%;
+}
+.fa-google {
+  color: var(--secondary-color);
+}
+.login-with-googleBtn {
+  padding: 0.6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid var(--secondary-color);
+  border-radius: 8px;
+}
+.login-text {
+  font-size: 18px;
+}
+.login-with-googleBtn div {
+  padding: 0.3rem;
+  margin-bottom: 0;
+}
+.or {
+  width: 40% !important;
+}
+.or h1 {
+  text-align: center;
+  font-size: 16px;
+  line-height: 0.5;
+}
+.or h1::before,
+.or h1::after {
+  background-color: #333;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+.or h1:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+h1:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+.signin-left {
+  background: linear-gradient(rgba(0, 154, 255, 0.7), rgba(0, 154, 255, 0.7)),
+    url("./assets/forms/signin_bg.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--bg-color);
+}
+
+.left-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.left-text h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.left-text h3 {
+  font-size: 30px;
+}
+
+.forget {
+  text-align: end;
+}
